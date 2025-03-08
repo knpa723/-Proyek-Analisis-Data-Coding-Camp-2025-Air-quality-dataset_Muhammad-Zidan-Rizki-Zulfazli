@@ -4,7 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df_encoded = pd.read_csv("main_data.csv")
+df_encoded = pd.read_csv("dashboard/main_data.csv")
 
 def plot_heatmap(correlation_columns, title):
     correlation_matrix = df_encoded[correlation_columns].corr()
